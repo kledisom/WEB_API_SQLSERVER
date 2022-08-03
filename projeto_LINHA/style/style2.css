@@ -1,0 +1,69 @@
+*{
+  padding: 0;
+  margin:0;
+}
+
+header {
+  width: 100%; /* 幅いっぱいを指定 */
+ height: 50px; /* 高さを50pxに指定 */
+ background: black; /* 背景色にグレーを指定 */
+ padding: 20px 0px; /* ヘッダーに上下左右それぞれ余白を指定 */
+ box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+ position: fixed; /* ウィンドウを基準に画面に固定 */
+ top: 0; /* 上下の固定位置を上から0pxにする */
+ left: 0; /* 左右の固定位置を左から0pxにする */
+ display: flex; /* 中の要素を横並びにする */
+ align-items: center; /* 中の要素を上下中央に並べる */
+ font-family:  sans-serif;
+ color: white;
+
+}
+
+h1{
+  width: 1600px;
+}
+ nav {
+
+   background-color: black;
+}
+ul {
+  display: flex;
+  text-align: right;
+}
+li {
+  list-style: none;
+  display:inline-block;
+  padding:0 10px;
+  zoom:1
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+
+}
+nav {
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+table {
+
+    border: 3px solid #FFFFFF; /* 外枠の線 */
+    border-collapse: collapse; /* 隣の枠線と重複するところは重ねる */
+    width: 100%; /* 画面幅に対してテーブルを横いっぱいに広げる */
+    margin: 30px 0px;
+}
+td {
+    border: 1px solid #FFFFFF; /* 外枠の線 */
+    border-collapse: collapse; /* 隣の枠線と重複するところは重ねる */
+    color:BLACK; /* 文字色 */
+    font-weight:bold; /* 文字の太さ */
+    text-align:center; /* 文字の中央寄せ */
+    font-size:60px; /* 文字の大きさ */
+    overflow-wrap: break-word; /* 文字がはみ出たら折り返す */
+}
+td {
+    padding: 3px; /* td内の余白 */
+    background-color: Orange; /* tdの背景色 */
+}

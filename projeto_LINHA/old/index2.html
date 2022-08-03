@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<script>
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+document.getElementById("current_date").innerHTML = year + "/" + month + "/" + day;
+</script>
+
+  <head>
+   <meta charset="utf-8">
+    <title>生産リアルタイムWeb板</title>
+    <link rel="stylesheet" href="style2.css">
+
+  </head>
+
+
+    　<header>
+    　  <h1>港南工場 生産集中管理板　Ver2.0.0.0</h1>
+          <nav>
+        <ul>
+          <li><a href="http://localhost:8088/index1.html">HOME</a></li>
+          <li><a href="#">使い方</a></li>
+
+        </ul>
+        </nav>
+    　</header>
+<body>
+
+
+
+  <table>
+  	<tbody>
+  		<tr height="100px"><!-- 1行目 -->
+  			<td colspan="2" width="150px" style="font-size:30px;" style="background-color: #1DA1F2;">職場名</td>
+  			<td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">ライン名</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">状況</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">作業<br>人員</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">目標数</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">実績数</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">可動率</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">ﾁｮｺ停<br>回数</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">ﾁｮｺ停<br>時間</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">段取<br>回数</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">段取<br>時間</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">ﾛｽ時間</td>
+        <td colspan="2"  style="font-size:30px;" style="background-color: #1DA1F2;">通信</td>
+  		</tr>
+      <tr>
+        <td colspan="2" style="font-size:30px;" style="background-color: #1DA1F2;" data="PPPP.txt" type="text/plain"></td>
+      </tr>
+      	</tbody>
+  </table>
+  <table id='data-table1'>
+  <tr><th>項目1</th><th>項目2</th><th>項目3</th></tr>
+ </table>
+<input type="file" id="settings" name="" value="arquivo">
+</body>
+<script src="script.js" defer></script>
+  </html>

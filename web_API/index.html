@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB API</title>
+  </head>
+  <body>
+    <h1>WEB API</h1>
+    <div id="getLine"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      axios
+        .get("http://localhost:1000/clientes/2")
+        .then(function (response) {
+          // manipula o sucesso da requisição
+          //console.log(response.data);
+          let arr = response.data;
+          console.log(arr);
+        })
+        .catch(function (error) {
+          // manipula erros da requisição
+          console.error(error);
+        });
+    </script>
+  </body>
+</html>

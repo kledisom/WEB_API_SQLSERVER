@@ -1,0 +1,1 @@
+*Este html é um exemplo de como consumir a API hospedada no IIS.

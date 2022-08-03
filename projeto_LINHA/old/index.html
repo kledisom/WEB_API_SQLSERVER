@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<script>
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+document.getElementById("current_date").innerHTML = year + "/" + month + "/" + day;
+</script>
+
+<style>
+    table {
+
+        border: 3px solid #FFFFFF; /* 外枠の線 */
+        border-collapse: collapse; /* 隣の枠線と重複するところは重ねる */
+        width: 100%; /* 画面幅に対してテーブルを横いっぱいに広げる */
+    }
+    td {
+        border: 1px solid #FFFFFF; /* 外枠の線 */
+        border-collapse: collapse; /* 隣の枠線と重複するところは重ねる */
+        color:#FFFFFF; /* 文字色 */
+        font-weight:bold; /* 文字の太さ */
+        text-align:center; /* 文字の中央寄せ */
+        font-size:60px; /* 文字の大きさ */
+        overflow-wrap: break-word; /* 文字がはみ出たら折り返す */
+    }
+    td {
+        padding: 3px; /* td内の余白 */
+        background-color: #000; /* tdの背景色 */
+    }
+</style>
+<table>
+	<tbody>
+		<tr height="150px"><!-- 1行目 -->
+			<td colspan="14" rowspan="2" style="background-color: #1DA1F2;">BBBB</td>
+			<td colspan="6" style="background-color: #1DA1F2;"><p id="current_date"></p></td>
+		</tr>
+		<tr height="80px">
+			<td colspan="4" style="background-color: #1DA1F2;">DDDD</td>
+		</tr>
+		<tr height="175px"><!-- 2行目 -->
+			<td Width="150px" colspan="5">背番号</td>
+			<td Width="400px" colspan="7">AAAA</td>
+			<td Width="170px" style="font-size:50px;" >可動率(%)</td>
+			<td colspan="5">AAAA</td>
+		</tr>
+		<tr height="160px"><!-- 3行目 -->
+			<td colspan="5">目標CT</td>
+			<td colspan="7">AAAA</td>
+			<td style="font-size:42px;" >チョコ停<br>時間</td>
+			<td Width="200px" colspan="3">AAA</td>
+			<td Width="170px" style="font-size:42px;"  >チョコ停<br>時間</td>
+			<td Width="200px" colspan="3">AAA</td>
+		</tr>
+		<tr height="160px"><!-- 4行目 -->
+			<td colspan="5">計画数</td>
+			<td colspan="7">AAAA</td>
+			<td style="font-size:45px;" >段取<br>回数</td>
+			<td Width="200px" colspan="3">AAA</td>
+			<td style="font-size:45px;"  >段取<br>時間</td>
+			<td colspan="3">AAA</td>
+		</tr>
+		<tr height="160px"><!-- 5行目 -->
+			<td colspan="5">実績数</td>
+			<td colspan="7">AAAA</td>
+			<td colspan="2">ロス時間</td>
+			<td colspan="4">AAAA</td>
+		</tr>
+	</tbody>
+</table>
+
+</html>
